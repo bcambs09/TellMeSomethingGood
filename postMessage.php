@@ -9,7 +9,7 @@ echo "You said: $text<br>";
 $goalDB = new mysqli($endpoint, $username, $password, $dbname);
 
 if(mysqli_connect_errno()) {
-    echo 'You messed up bro - DB conenction failed.';
+    echo 'You messed up bro - DB connection failed.';
     exit;
 }
 

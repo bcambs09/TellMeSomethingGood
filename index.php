@@ -12,5 +12,7 @@
             <br><br>
             <input type="submit" value="Post Message">
         </form>
+        <br><br>
+        <?php include 'listPosts.php'; ?>
     </body>
 </html>
