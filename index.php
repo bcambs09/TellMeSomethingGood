@@ -13,6 +13,10 @@
             <input type="submit" value="Post Message">
         </form>
         <br><br>
+        <a href="index.php?sort=popular">Popular</a>
+        <a href="index.php?sort=recent">Recent</a>
+        <br><br>
         <?php include 'listPosts.php'; ?>
+        <?php include 'addPagination.php'; ?>
     </body>
 </html>
