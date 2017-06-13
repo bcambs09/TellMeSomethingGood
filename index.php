@@ -6,6 +6,8 @@
     </head>
     <body>
         <h1>What's Good Today?</h1>
+        <a href="https://www.gofundme.com/whats-good-today">Donate to the
+            Brain & Behavior Research Foundation</a><br><br>
         <form action="postMessage.php" method="POST">
             Message:<br>
             <input type="text" name="message">
