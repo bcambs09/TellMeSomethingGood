@@ -33,14 +33,15 @@ if(mysqli_connect_errno()) {
 $posts = $goalDB->query($query);
 
 if ($posts->num_rows > 0) {
-    // output data of each row
+    $numPost = 0;
+    $id_list = array();
     while($post = $posts->fetch_assoc()) {
-        echo $post["message"]." ".$post["likes"]."<br>";
-        echo "<button type=\"button\" class=\"like\" id=".$post["id"].">Like</button><br><br>";
+        $id_list[$numPost] = $post["id"];
+        $numPost++;
     }
+    echo json_encode($id_list);
 } else {
     echo "0 results";
 }
 
 $goalDB->close();
-
