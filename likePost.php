@@ -1,20 +1,13 @@
 <?php
 
-error_log("in like post");
+include('config.php');
 
 if (isset($_POST['id'])) {
-
-    echo $_POST['id'];
     
-    function likePost($id) {
+    $dbConnection = new mysqli($endpoint, $username, $password, $dbname);
+    
+    function likePost($id, $dbConnection) {
 
-        
-        $endpoint = 'tellmesomethinggood.c4hut6i7bvsw.us-west-2.rds.amazonaws.com';
-        $username = 'brendan';
-        $password = 't5U4c8K3r!';
-        $dbname = 'Tell_Me_Something_Good_Dev';
-        
-        $dbConnection = new mysqli($endpoint, $username, $password, $dbname);
         if(mysqli_connect_errno()) {
             echo 'You messed up bro - DB connection failed.';
             exit;
@@ -34,6 +27,6 @@ if (isset($_POST['id'])) {
         $dbConnection->close();
     }
     
-    likePost($_POST['id']);
+    likePost($_POST['id'], $dbConnection);
 }
 
