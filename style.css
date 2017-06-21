@@ -1,0 +1,26 @@
+h1.headMessage{
+    text-align: center;
+    position: relative;
+}
+
+a.donate{
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#messagePost{
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#postList{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#post{
+    background-color: bisque;
+}
