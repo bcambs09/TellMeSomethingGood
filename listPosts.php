@@ -18,9 +18,9 @@ if (isset($_GET["sort"])) {
 
 $start_from = ($page-1) * 10;
 if($sort == "popular") {
-    $query = "SELECT * FROM good_messages ORDER BY likes DESC, id DESC LIMIT $start_from, 10"; 
+    $query = "SELECT * FROM good_messages WHERE approved='1' ORDER BY likes DESC, id DESC LIMIT $start_from, 10"; 
 }else{
-    $query = "SELECT * FROM good_messages ORDER BY id DESC LIMIT $start_from, 10";
+    $query = "SELECT * FROM good_messages WHERE approved='1' ORDER BY id DESC LIMIT $start_from, 10";
 }
 
 $goalDB = new mysqli($endpoint, $username, $password, $dbname);
@@ -35,8 +35,8 @@ $posts = $goalDB->query($query);
 if ($posts->num_rows > 0) {
     // output data of each row
     while($post = $posts->fetch_assoc()) {
-        echo "<div id=\"post\">".$post["message"]." <p class=".$post["id"].">".$post["likes"]."</p>";
-        echo "<button type=\"button\" class=\"like\" id=".$post["id"].">Like</button></div><br><br>";
+        echo "<div id=\"post\">".$post["message"]."<br><button type=\"button\" class=\"like\" id=".$post["id"].">Like</button>";
+        echo " <p id=\"likeNum\" class=".$post["id"].">".$post["likes"]."</p></div><br><br>";
     }
 } else {
     echo "0 results";
