@@ -6,9 +6,12 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script src="./cloudAnimate.js"></script>
+        <script src="./cloudSpawn.js"></script>
     </head>
     <body>
         <div id="header">
+            <div class ="animateRight"><img src="./images/cloud.png"></div>
             <a id="donate" href="https://www.gofundme.com/whats-good-today">Donate</a>
             <h1 class="headMessage">What's Good Today?</h1>
             <div id="messagePost">
