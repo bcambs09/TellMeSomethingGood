@@ -8,7 +8,7 @@ $posts = $goalDB->query($query);
 $total_records = $posts->num_rows;  //count number of records
 $total_pages = ceil($total_records / 10); 
 
-echo "<div><ul id='pageNumbers'>"; // Goto 1st page  
+echo "<div id=\"paginationDiv\"><ul id='pageNumbers'>"; // Goto 1st page  
 
 if($page < 0 || $page > $total_pages) $page = 1;
 

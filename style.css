@@ -4,38 +4,68 @@
     font-family: Arial;
 }
 
+html{
+    width: 100%;
+    height: 100%;
+}
+
 body{
     background-color: #a1dbff;
-    max-width: 100%;
-    overflow-x: hidden;
+    position: absolute;
+    width: 100vw;
+}
+
+
+
+.headerWrap{
+    
+}
+
+.bodySubmitWrap{
+    height: 100vh;
+}
+
+.footerSubmit{
+    background-color: #f0f9ff;
+    color: black;
+}
+
+.submitWrap{
+    height: 100%;
 }
 
 h1.headMessage{
     font-family: Arial;
     color: white;
     -webkit-text-stroke: 1px black;
-    text-align: center;
     position: relative;
+    display: inline-block;
+    line-height: 70px;
+    clear: both;
 }
 
 #messagePost{
-    width: 50%;
+    background-color: rgb(102, 196, 255);
+    width: 60%;
     margin: 0 auto;
+    padding: 5px;
     text-align: center;
-    padding: 15px;
     position: relative;
     z-index: 2;
+    border-radius: 5px;
+}
+
+#content{
+    margin: 0 auto;
+    width: 1000px;
 }
 
 #postList{
-    width: 50%;
+    width: 690px;
+    display: block;
+    float: left;
     margin: 0 auto;
-    padding: 15px;
-}
-
-#post{
-    background-color: rgba(255, 255, 255, 0.3);
-    font-family: serif;
+    padding: 5px;
 }
 
 textarea{
@@ -71,25 +101,63 @@ textarea{
 .animateRight{
     position: absolute;
     left: -200px;
-    top: 40px;
+    top: 60px;
     width: 150px;
     height: 75px;
 }
 
+#headerBar{
+    padding: 0px 20px;
+}
+
+.slash{
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.navList{
+    display: inline-block;
+    margin: 0px 10px;
+    list-style: none;
+    text-align: center;
+    float: right;
+}
+
+.nav{
+    line-height: 70px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.navLink{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navLink:link{
+    text-decoration: none;
+    color: black;
+}
+
+.navLink:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.navLink:hover{
+    color: white;
+}
+
 #header{
+    padding-bottom: 20px;
     background: #a1dbff; /* Old browsers */
     background: -moz-linear-gradient(top, #a1dbff 0%, #cbebff 68%, #f0f9ff 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #a1dbff 0%,#cbebff 68%,#f0f9ff 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #a1dbff 0%,#cbebff 68%,#f0f9ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1dbff', endColorstr='#f0f9ff',GradientType=0 ); /* IE6-9 */
-    padding: 15px;
-}
-
-#header #donate{
-    position: absolute;
-    right: 0px;
-    margin-right: 15px;
-    z-index:1;
 }
 
 #sorting{
@@ -98,9 +166,15 @@ textarea{
 }
 
 #sorting #buttons {
-    width: 50%;
+    width: 1000px;
     padding: 10px;
     margin: 0 auto;
+}
+
+#sidebar{
+    float: right;
+    width: 300px;
+    margin: 5px 0;
 }
 
 .sortActive{
@@ -123,6 +197,8 @@ textarea{
 #dirt {
     background-image: url(./images/dirtSmall.png);
     background-color: rosybrown;
+    float: left;
+    width: 100%;
 }
 
  .text-xs-center {
@@ -134,28 +210,71 @@ textarea{
 }
 
 #post{
-    padding: 5px;
+    padding: 10px;
+    font-family: serif;
+    font-size: 18px;
 }
 
 #likeNum{
     display: inline-block;
     font-family: serif;
+    vertical-align: middle;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 2px 5px;
+    text-align: center;
+    background-color: white;
 }
 
 button.like{
     display: inline-block;
+    vertical-align: middle;
+    padding: 3px;
+}
+
+#paginationDiv{
+    padding-top: 10px;
+}
+
+#postsOnly{
+    background-color: rgba(200, 200, 200, 0.7);
 }
 
 #footer{
-    width: 50%;
+    width: 75%;
     padding: 15px;
     margin: 0 auto;
     text-align: center;
     color: white;
+    clear: both;
+}
+
+.bottomPage{
+    clear: both;
 }
 
 #pageNumbers{
     text-align: right;
+}
+
+.introMessage{
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+    position: relative;
+    border-radius: 8px;
+    z-index: 2;
+    background-color: rgb(102, 196, 255);
+    box-shadow: 10px 10px 5px grey;
+}
+
+.introText{
+    line-height: 70px;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 ::-webkit-input-placeholder {
