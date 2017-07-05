@@ -4,11 +4,6 @@
     font-family: Arial;
 }
 
-html{
-    width: 100%;
-    height: 100%;
-}
-
 body{
     background-color: #a1dbff;
     position: absolute;
@@ -30,8 +25,33 @@ body{
     color: black;
 }
 
+#submitButton{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.submitSection{
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+}
+
+.ad{
+    background-color: rgba(230, 230, 230, 0.7);
+    margin-bottom: 10px;
+}
+
+.socialShare{
+    background-color: rgba(230, 230, 230, 0.7);
+    padding: 10px;
+    margin: 10px 0px;
+    border: 2px solid black;
+}
+
 .submitWrap{
-    height: 100%;
+    min-height: 100%;
 }
 
 h1.headMessage{
@@ -44,15 +64,50 @@ h1.headMessage{
     clear: both;
 }
 
+#happyMessage{
+    border-radius: 5px;
+    height: 150px;
+    width: 100%;
+    resize: none;
+    border: 2px solid lightgray;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#nickname{
+    border-radius: 5px;
+    resize: none;
+    border: 2px solid lightgray;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+textarea{
+    display: block;
+    box-sizing: border-box;
+}
+
+.formFold{
+    width: 32%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
 #messagePost{
-    background-color: rgb(102, 196, 255);
-    width: 60%;
-    margin: 0 auto;
-    padding: 5px;
-    text-align: center;
+    background-color: #32aae1;
+    color: white;
+    line-height: 1.5;
+    width: 50%;
+    margin: 20px auto;
+    padding: 25px;
     position: relative;
     z-index: 2;
     border-radius: 5px;
+    text-align: left;
+    box-shadow: 10px 10px 5px grey;
+    overflow: auto;
 }
 
 #content{
@@ -66,12 +121,6 @@ h1.headMessage{
     float: left;
     margin: 0 auto;
     padding: 5px;
-}
-
-textarea{
-    width: 500px;
-    height: 150px;
-    resize: none;
 }
 
 #pagination{
@@ -151,6 +200,10 @@ textarea{
     color: white;
 }
 
+iframe[id^="oauth2relay"]{
+    display: none!important;
+}
+
 #header{
     padding-bottom: 20px;
     background: #a1dbff; /* Old browsers */
@@ -209,10 +262,17 @@ textarea{
     display: inline-block;
 }
 
+.tagline{
+    color: lightgray;
+    text-align: center;
+}
+
 #post{
     padding: 10px;
     font-family: serif;
-    font-size: 18px;
+    font-size: 20px;
+    background-color: rgba(230, 230, 230, 0.7);
+    border: 2px solid black;
 }
 
 #likeNum{
@@ -237,7 +297,7 @@ button.like{
 }
 
 #postsOnly{
-    background-color: rgba(200, 200, 200, 0.7);
+    
 }
 
 #footer{
@@ -278,28 +338,23 @@ button.like{
 }
 
 ::-webkit-input-placeholder {
-    font-size: 25px;
-    text-align: center;
-    padding: 20px;
-    line-height: 110px;
+    font-size: 16px;
+    color: lightgray;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-    font-size: 25px;
-    text-align: center;
-    line-height: 110px;
+    font-size: 16px;
+    color: lightgray;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-    font-size: 25px;
-    text-align: center;
-    line-height: 110px;
+    font-size: 16px;
+    color: lightgray;
 }
 
 :-ms-input-placeholder {
-    font-size: 25px;
-    text-align: center;
-    line-height: 110px;
+    font-size: 16px;
+    color: lightgray;
 }
 
 #pageList{

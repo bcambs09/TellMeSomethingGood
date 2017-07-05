@@ -8,6 +8,7 @@ $response = null;
 $reCaptcha = new ReCaptcha($secret);
 
 $text = filter_input(INPUT_POST, 'message');
+$nickname = filter_input(INPUT_POST, 'nickname');
 
 if (filter_input(INPUT_POST, 'g-recaptcha-response')) {
     $response = $reCaptcha->verifyResponse(
@@ -25,9 +26,14 @@ if ($response != null && $response->success) {
         exit;
     }
 
-    $stmt = $goalDB->prepare("INSERT INTO good_messages (id, message) VALUES (NULL, ?)");
-    $stmt->bind_param("s", $text);
-    $stmt->execute();
+    $stmt = $goalDB->prepare("INSERT INTO good_messages (id, message, nickname) VALUES (NULL, ?, ?)");
+    if (!$stmt->bind_param("ss", $text, $nickname)) {
+        echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
+    }
+
+    if (!$stmt->execute()) {
+        echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
+    }
 
     $stmt->close();
     $goalDB->close();

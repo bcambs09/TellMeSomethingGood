@@ -27,13 +27,27 @@
         <div id="header" class="submitWrap">
             <div class ="animateRight"><img src="/TellMeSomethingGood/images/cloud.png"></div>
             <div id="messagePost">
-                <form action="postMessage.php" method="POST">
+                <h1>Submit a Post</h1>
+                <p>Did you have something good happen to you today? Sometimes it can be hard
+                to find the good in a situation, but there is always a positive takeaway. Whether you experienced
+                an entirely happy moment, or a sad moment that taught you something useful, share it here to 
+                inspire others!</p>
+                <br>
+                <form action="/TellMeSomethingGood/postMessage.php" method="POST">
+                    <div class="formFold">
+                        <p>Nickname</p>
+                        <input type="text" id="nickname" name="nickname"></input>
+                    </div>
                     <br>
-                    <textarea id="happyMessage" name ="message" placeholder="Tell me something good"></textarea>
+                    <br>
+                    <textarea id="happyMessage" name="message" placeholder="Tell me something good!"></textarea>
                     <br><br>
                     <div class="g-recaptcha" data-sitekey="6LcY_iYUAAAAACnEJcL5DhKEEHe5FedJPS-UMWLi"></div>
-                    <br>
-                    <input type="submit" value="Submit">
+                    <div class="submitSection">
+                        <input type="submit" value="Submit" id="submitButton">
+                        <p style="display: inline-block; width: 60%; vertical-align: text-top;">Your post will be reviewed by an admin, and it will
+                        appear on the homepage if it is approved.</p>
+                    </div>
                 </form>
             </div>
         </div>

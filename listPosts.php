@@ -35,8 +35,13 @@ $posts = $goalDB->query($query);
 if ($posts->num_rows > 0) {
     // output data of each row
     while($post = $posts->fetch_assoc()) {
-        echo "<br><div id=\"post\">".$post["message"]."<br><button type=\"button\" class=\"like\" id=".$post["id"].">Like</button>";
-        echo " <p id=\"likeNum\" class=".$post["id"].">".$post["likes"]."</p></div><br><hr>";
+        $formatDateParts = explode(" ", $post["date"]);
+        $date = explode("-", $formatDateParts[0]);
+        $time = $formatDateParts[1];
+        
+        echo "<div id=\"post\">".$post["message"]."<br><button type=\"button\" class=\"like\" id=".$post["id"].">Like</button>";
+        echo " <p id=\"likeNum\" class=".$post["id"].">".$post["likes"]."</p></div><p class=\"tagline\">By ".$post["nickname"];
+        echo " on ".$date[1]."-".$date[2]."-".$date[0]." at ".$time."<br><br>";
     }
 } else {
     echo "0 results";
