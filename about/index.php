@@ -22,7 +22,7 @@
             </div>
         </div>
         <div id="header" class="submitWrap">
-            <div class="about">
+            <div id="messagePost">
                 <p> Hi, thanks for visiting What's Good Today! My name is Brendan Campbell, and I am the founder of What's Good Today.
                     <br><br>
                 Happiness for myself and for others has always been important to me. I hope that my website makes you feel the same way.

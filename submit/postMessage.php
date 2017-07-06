@@ -1,7 +1,7 @@
 <?php
 
-include 'config.php';
-require_once "recaptchalib.php";
+include '../config.php';
+require_once "../recaptchalib.php";
 
 $response = null;
  

@@ -9,19 +9,18 @@ if (isset($_POST['id'])) {
     function likePost($id, $dbConnection) {
 
         if(mysqli_connect_errno()) {
-            echo 'You messed up bro - DB connection failed.';
             exit;
         }
 
-        $query = "SELECT * FROM `Tell_Me_Something_Good_Dev`.`good_messages` WHERE `id`='".$id."'";
+        $query = "SELECT * FROM `dev-TellMeSomethingGood`.`good_messages` WHERE `id`='".$id."'";
         $response = $dbConnection->query($query);
         $post = $response->fetch_assoc();
         $likes = $post["likes"];
         $likes++;
-        $query = "UPDATE `Tell_Me_Something_Good_Dev`.`good_messages` SET"
+        $query = "UPDATE `dev-TellMeSomethingGood`.`good_messages` SET"
                 . "`likes`='".$likes."' WHERE `id`='".$id."';";
         $dbConnection->query($query);
-
+        error_log($likes);
         echo $id;
 
         $dbConnection->close();

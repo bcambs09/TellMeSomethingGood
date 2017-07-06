@@ -5,13 +5,14 @@
         <title>What's Good Today?</title>
         <link rel="stylesheet" href="../style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <meta http-equiv="refresh" content="5;url=/TellMeSomethingGood/">
     </head>
     <body class="bodySubmitWrap">
         <div class="headerWrap">
             <div id="headerBar">
                 <h1 class="headMessage">What's Good Today?</h1>
                 <ul class="navList">
-                    <li class="nav"><a class="navLink" href="../">Home</a></li>
+                    <li class="nav"><a class="navLink" href="/TellMeSomethingGood/">Home</a></li>
                     <li class="slash">|</li>
                     <li class="nav"><a class="navLink" href="/TellMeSomethingGood/submit/">Submit Post</a></li>
                     <li class="slash">|</li>
@@ -22,7 +23,10 @@
             </div>
         </div>
         <div id="header" class="submitWrap">
-            
+            <div id="messagePost">
+                Thank you for posting! Check back on the homepage within the next few days to see if your post 
+                is approved.<br><br>You will be redirected to the homepage in 5 seconds.
+            </div>
         </div>
         <div class="footerSubmit">
             <hr class="bottomPage">

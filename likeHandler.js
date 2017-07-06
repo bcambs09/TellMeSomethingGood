@@ -2,7 +2,6 @@ var buttons = document.getElementsByClassName("like");
 for(i = 0; i < buttons.length; i++) {
     (function(i) {
         var id = buttons[i].id;
-        console.log(id);
         document.getElementById(id).onclick = function () {
             var likes = parseInt(document.getElementsByClassName(id)[0].innerHTML);
             console.log(likes);

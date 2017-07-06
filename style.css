@@ -160,7 +160,7 @@ textarea{
 .animateRight{
     position: absolute;
     left: -200px;
-    top: 60px;
+    top: 0px;
     width: 150px;
     height: 75px;
 }
@@ -221,6 +221,9 @@ iframe[id^="oauth2relay"]{
 }
 
 #header{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
     padding-bottom: 20px;
     background: #a1dbff; /* Old browsers */
     background: -moz-linear-gradient(top, #a1dbff 0%, #cbebff 68%, #f0f9ff 100%); /* FF3.6-15 */
@@ -340,7 +343,7 @@ button.like{
     position: relative;
     border-radius: 8px;
     z-index: 2;
-    background-color: rgb(102, 196, 255);
+    background-color: #32aae1;
     box-shadow: 10px 10px 5px grey;
 }
 
@@ -351,6 +354,7 @@ button.like{
     text-align: center;
     position: relative;
     z-index: 2;
+    color: white;
 }
 
 ::-webkit-input-placeholder {
