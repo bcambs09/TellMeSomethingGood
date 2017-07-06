@@ -18,25 +18,25 @@ if (filter_input(INPUT_POST, 'g-recaptcha-response')) {
 }
 
 if ($response != null && $response->success) {
-    echo "You said: $text<br>";
     $goalDB = new mysqli($endpoint, $username, $password, $dbname);
 
     if(mysqli_connect_errno()) {
-        echo 'You messed up bro - DB connection failed.';
-        exit;
+        header('Location: /TellMeSomethingGood/error/');
     }
 
     $stmt = $goalDB->prepare("INSERT INTO good_messages (id, message, nickname) VALUES (NULL, ?, ?)");
     if (!$stmt->bind_param("ss", $text, $nickname)) {
-        echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
+        header('Location: /TellMeSomethingGood/error/');
     }
 
     if (!$stmt->execute()) {
-        echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
+        header('Location: /TellMeSomethingGood/error/');
     }
 
     $stmt->close();
     $goalDB->close();
+    
+    header('Location: /TellMeSomethingGood/thank-you/');
 } else {
-    echo "INTRUDER<br>";
+    header('Location: /TellMeSomethingGood/error/');
 }

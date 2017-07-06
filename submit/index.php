@@ -16,11 +16,11 @@
                 <ul class="navList">
                     <li class="nav"><a class="navLink" href="../">Home</a></li>
                     <li class="slash">|</li>
-                    <li class="nav"><a class="navLink" href="https://www.gofundme.com/whats-good-today">Submit Post</a></li>
+                    <li class="nav"><a class="navLink" href="/TellMeSomethingGood/submit/">Submit Post</a></li>
                     <li class="slash">|</li>
                     <li class="nav"><a class="navLink" href="https://www.gofundme.com/whats-good-today" target="_blank">Support Mental Health</a></li>
                     <li class="slash">|</li>
-                    <li class="nav"><a class="navLink" href="https://www.gofundme.com/whats-good-today">About</a></li>
+                    <li class="nav"><a class="navLink" href="/TellMeSomethingGood/about/">About</a></li>
                 </ul>
             </div>
         </div>
@@ -33,7 +33,7 @@
                 an entirely happy moment, or a sad moment that taught you something useful, share it here to 
                 inspire others!</p>
                 <br>
-                <form action="/TellMeSomethingGood/postMessage.php" method="POST">
+                <form action="/TellMeSomethingGood/submit/postMessage.php" method="POST">
                     <div class="formFold">
                         <p>Nickname</p>
                         <input type="text" id="nickname" name="nickname"></input>

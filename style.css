@@ -74,6 +74,16 @@ h1.headMessage{
     font-size: 16px;
 }
 
+.contactInput{
+    border-radius: 5px;
+    resize: none;
+    border: 2px solid lightgray;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
 #nickname{
     border-radius: 5px;
     resize: none;
@@ -202,6 +212,12 @@ textarea{
 
 iframe[id^="oauth2relay"]{
     display: none!important;
+}
+
+.about{
+    width: 60%;
+    margin: 20px auto;
+    font-size: 20px;
 }
 
 #header{

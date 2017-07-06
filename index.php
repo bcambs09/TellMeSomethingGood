@@ -39,7 +39,7 @@
                     <li class="slash">|</li>
                     <li class="nav"><a class="navLink" href="https://www.gofundme.com/whats-good-today" target="_blank">Support Mental Health</a></li>
                     <li class="slash">|</li>
-                    <li class="nav"><a class="navLink" href="https://www.gofundme.com/whats-good-today">About</a></li>
+                    <li class="nav"><a class="navLink" href="/TellMeSomethingGood/about/">About</a></li>
                 </ul>
             </div>
         </div>
