@@ -36,6 +36,7 @@ if ($response != null && $response->success) {
     $stmt->close();
     $goalDB->close();
     
+    mail("brendan@whatsgoodtoday.com", "New post to review", $text, $nickname);
     header('Location: /TellMeSomethingGood/thank-you/');
 } else {
     header('Location: /TellMeSomethingGood/error/');
