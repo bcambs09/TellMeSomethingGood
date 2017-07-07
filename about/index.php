@@ -58,6 +58,7 @@
                             else{        
                                 $from="From: $name<$email>\r\nReturn-path: $email";
                                 $subject="What's Good Today message!";
+                                mail("brendan@whatsgoodtoday.com", $subject, $message, $from);
                                 echo "Email sent!";
                                 }
                         }  

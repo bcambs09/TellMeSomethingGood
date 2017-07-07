@@ -88,17 +88,6 @@
                     <script src="likeHandler.js"></script>
                 </div>
                 <div id="sidebar">
-                    <div class="ad">
-                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <!-- WhatsGoodTodayMediumRect -->
-                        <ins class="adsbygoogle"
-                             style="display:inline-block;width:300px;height:250px"
-                             data-ad-client="ca-pub-3367848530373976"
-                             data-ad-slot="1396128844"></ins>
-                        <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
                     <div class="socialShare">
                        <h1>Sharing is Caring</h1>
                     <br>
@@ -113,9 +102,11 @@
                     </div>
                 </div>
             </div>
-            <hr class="bottomPage">
-            <div id="footer">
-                <p>Copyright &copy; <?php echo date("Y"); ?> Brendan Campbell</p>
+            <div class="footerWrap">
+                <hr class="bottomPage">
+                <div id="footer">
+                    <p>Copyright &copy; <?php echo date("Y"); ?> Brendan Campbell</p>
+                </div>
             </div>
         </div>
     </body>

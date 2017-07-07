@@ -25,9 +25,7 @@ if($sort == "popular") {
 
 $goalDB = new mysqli($endpoint, $username, $password, $dbname);
 
-echo mysqli_connect_errno(); //test
 if(mysqli_connect_errno()) {
-    
     exit;
 }
 
