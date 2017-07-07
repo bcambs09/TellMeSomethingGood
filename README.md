@@ -12,3 +12,5 @@ $password   // Database password
 $dbname     // Database name
 
 $secret     // Google Recaptcha secret key
+
+All files Copyright &copy; 2017 Brendan Campbell.
