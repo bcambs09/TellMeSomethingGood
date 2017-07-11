@@ -377,6 +377,7 @@ button.unlike{
     border: none;
     display: inline-block;
     vertical-align: middle;
+    margin-top:5px;
 }
 
 button.unlike:hover{
@@ -396,6 +397,7 @@ button.like{
     border: none;
     display: inline-block;
     vertical-align: middle;
+    margin-top:5px;
 }
 
 button.like:hover{

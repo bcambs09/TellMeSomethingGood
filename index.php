@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>What's Good Today?</title>
         <link rel="stylesheet" href="style.css">
+        <meta name="description" content="Share happy moments from your day with others!">
         <link rel="apple-touch-icon" sizes="180x180" href="/TellMeSomethingGood/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/TellMeSomethingGood/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/TellMeSomethingGood/favicon-16x16.png">
