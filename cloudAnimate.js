@@ -4,7 +4,7 @@ var id = window.setInterval( function(e) {
         for(var i = 0; i < elemsRight.length; i++) {
             var pos = parseFloat(elemsRight[i].style.left);
             if(isNaN(pos)) {
-                pos = -200;
+                pos = -350;
             }
             if (pos === screen.width) {
                 var parent = document.getElementById("header");

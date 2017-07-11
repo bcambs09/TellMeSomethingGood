@@ -12,7 +12,6 @@ for(i = 0; i < buttons.length; i++) {
                     type : 'post',
                     data : {id : id},
                 });
-                document.getElementById(id).innerHTML = "Unlike";
                 likes++;
                 $(this).removeClass("like");
                 $(this).addClass("unlike");
@@ -24,7 +23,6 @@ for(i = 0; i < buttons.length; i++) {
                     data : {id : id},
                 });
                 likes--;
-                document.getElementById(id).innerHTML = "Like";
                 $(this).removeClass("unlike");
                 $(this).addClass("like");
             }

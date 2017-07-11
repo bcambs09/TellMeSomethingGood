@@ -28,6 +28,20 @@ body{
     display: inline-block;
     vertical-align: top;
     margin: 10px;
+    background: url(images/submit_normal.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 94px;
+    height: 32px;
+    border: none;
+}
+
+#submitButton:hover{
+    background: url(images/submit_hover.png);
+    background-repeat: no-repeat;
+    width: 94px;
+    height: 32px;
+    background-size: 100%;
 }
 
 .submitSection{
@@ -60,6 +74,10 @@ h1.headMessage{
     display: inline-block;
     line-height: 70px;
     clear: both;
+}
+
+img.headMessage{
+    max-height:100px;
 }
 
 #happyMessage{
@@ -157,13 +175,14 @@ textarea{
 
 .animateRight{
     position: absolute;
-    left: -200px;
+    left: -350px;
     top: 0px;
     width: 150px;
     height: 75px;
 }
 
 #headerBar{
+    max-height: 100px;
     padding: 0px 20px;
 }
 
@@ -232,10 +251,11 @@ iframe[id^="oauth2relay"]{
 
 #sorting{
     background-image: url(./images/grass.png);
-    height: 50px;
+    background-color: #f0f9ff;
+    height: 106px;
 }
 
-#sorting #buttons {
+#buttons {
     width: 1000px;
     padding: 10px;
     margin: 0 auto;
@@ -252,7 +272,7 @@ iframe[id^="oauth2relay"]{
 }
 
 .sort{
-    color: black;
+    color: white;
     margin: 0px 5px;
 }
 
@@ -301,21 +321,89 @@ iframe[id^="oauth2relay"]{
     border: 2px solid black;
 }
 
+@media screen and (max-width: 1300px) {
+    img.headMessage{
+        max-width: 320px;
+    }
+}
+
 #likeNum{
     display: inline-block;
     font-family: serif;
     vertical-align: middle;
-    border-radius: 3px;
-    border: 1px solid black;
     padding: 2px 5px;
     text-align: center;
     background-color: white;
 }
 
-button.like{
+.arrow_box {
+	position: relative;
+	background: #ffffff;
+	border-radius: 3px;
+        border: 2px solid black;
+        display: inline-block;
+        margin-left: 4px;
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #ffffff;
+	border-width: 5px;
+	margin-top: -5px;
+}
+.arrow_box:before {
+	border-color: rgba(5, 4, 10, 0);
+	border-right-color: #05040a;
+	border-width: 8px;
+	margin-top: -8px;
+}
+
+button.unlike{
+    background: url('images/like_normal.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 93px;
+    height: 32px;
+    border: none;
     display: inline-block;
     vertical-align: middle;
-    padding: 3px;
+}
+
+button.unlike:hover{
+    background: url('images/like_hover.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 93px;
+    height: 32px;
+}
+
+button.like{
+    background: url('images/like_normal.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 93px;
+    height: 32px;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+button.like:hover{
+    background: url('images/like_hover.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 93px;
+    height: 32px;
 }
 
 #paginationDiv{
@@ -344,7 +432,7 @@ button.like{
 }
 
 .introMessage{
-    margin: 0 auto;
+    margin: 50px auto;
     width: 600px;
     height: 200px;
     position: relative;

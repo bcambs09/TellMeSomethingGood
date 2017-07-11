@@ -8,11 +8,17 @@
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <script src="/TellMeSomethingGood/cloudAnimate.js"></script>
         <script src="/TellMeSomethingGood/cloudSpawn.js"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body class="bodySubmitWrap">
         <div class="headerWrap">
             <div id="headerBar">
-                <h1 class="headMessage">What's Good Today?</h1>
+                <img class="headMessage" src="/TellMeSomethingGood/images/whatsgoodtoday_logo_small.png">
                 <ul class="navList">
                     <li class="nav"><a class="navLink" href="../">Home</a></li>
                     <li class="slash">|</li>
@@ -44,7 +50,7 @@
                     <br><br>
                     <div class="g-recaptcha" data-sitekey="6LcY_iYUAAAAACnEJcL5DhKEEHe5FedJPS-UMWLi"></div>
                     <div class="submitSection">
-                        <input type="submit" value="Submit" id="submitButton">
+                        <input type="submit" value="&nbsp;" id="submitButton">
                         <p style="display: inline-block; width: 60%; vertical-align: text-top;">Your post will be reviewed by an admin, and it will
                         appear on the homepage if it is approved.</p>
                     </div>

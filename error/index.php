@@ -6,11 +6,17 @@
         <link rel="stylesheet" href="../style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <meta http-equiv="refresh" content="5;url=/TellMeSomethingGood/">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body class="bodySubmitWrap">
         <div class="headerWrap">
             <div id="headerBar">
-                <h1 class="headMessage">What's Good Today?</h1>
+                <img class="headMessage" src="/TellMeSomethingGood/images/whatsgoodtoday_logo_small.png">
                 <ul class="navList">
                     <li class="nav"><a class="navLink" href="/TellMeSomethingGood">Home</a></li>
                     <li class="slash">|</li>

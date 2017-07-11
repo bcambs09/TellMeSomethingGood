@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <title>What's Good Today?</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/TellMeSomethingGood/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/TellMeSomethingGood/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/TellMeSomethingGood/favicon-16x16.png">
+        <link rel="manifest" href="/TellMeSomethingGood/manifest.json">
+        <link rel="mask-icon" href="/TellMeSomethingGood/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <script src="./cloudAnimate.js"></script>
@@ -38,7 +44,7 @@
         }(document, 'script', 'facebook-jssdk'));</script>
         <div class="headerWrap">
             <div id="headerBar">
-                <h1 class="headMessage">What's Good Today?</h1>
+                <img class="headMessage" src="images/whatsgoodtoday_logo_small.png">
                 <ul class="navList">
                     <li class="nav"><a class="navLink" href=".">Home</a></li>
                     <li class="slash">|</li>
@@ -60,6 +66,9 @@
             </div>
         </div>
         <div id="sorting">
+           
+        </div>
+        <div id="dirt">
             <div id="buttons">
                 <?php
                     $sort = "recent";
@@ -77,8 +86,6 @@
                 ?>
                 
             </div>
-        </div>
-        <div id="dirt">
             <div id="content">
                 <div id="postList">
                     <div id="postsOnly">

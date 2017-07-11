@@ -9,7 +9,7 @@ window.setInterval(function(e) {
         cloud.appendChild(img);
         document.getElementById("header").appendChild(cloud);
     }
-}, 8000);
+}, 12000);
 
 
 
